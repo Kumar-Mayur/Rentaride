@@ -1,0 +1,38 @@
+.card{
+    border: none !important;
+    border-radius: 0%;
+    padding: 0%;
+    box-shadow: none;
+    background-color: #fff;
+   }
+   .card-body{
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+   }
+
+   /* img {
+    height: 300px;
+    border-radius: 30%;
+    transition: transform .7s ease-in-out;
+  }
+  img:hover {
+    transform: rotate(360deg);
+  } */
+  .works-service{
+    padding-bottom: 100px;
+  }
+  .card-img-top{
+    height: auto;
+  }
+  .head-text h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .card-body h1{
+    font-weight: 500;
+  }
+  .head-text{
+    padding-bottom: 50px;
+  }

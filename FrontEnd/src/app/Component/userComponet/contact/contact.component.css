@@ -1,0 +1,117 @@
+#ContactBar {}
+ 
+.contact-txt {
+  background-color: white;
+  margin-top: 80px;
+  padding: 40px;
+  border: 1px solid #ccc;
+}
+ 
+.contact-txt h1 {
+  margin-left: 120px;
+  margin-bottom: 20px;
+  color: red;
+}
+ 
+.contact-txt a {
+  float: right;
+  font-size: 25px;
+  margin-right: 20px;
+  color: red;
+}
+ 
+.contact-txt p {
+  width: 27%;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  text-align: left;
+  color: #50CB93;
+  margin-left: 55px;
+}
+ 
+.Contact-Me {
+  background-color: #7FC8A9;
+  padding: 60px;
+}
+ 
+.Contact-Me p {
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+ 
+.Contact-Me a {
+  color: white;
+  margin-left: 40px;
+}
+ 
+.Contact-Me a:hover {
+  color: red;
+}
+ 
+.MessageBox {
+  float: right;
+  margin-right: 150px;
+  margin-top: 15px;
+  width: 30%;
+  height: 350px;
+  background-color: white;
+  box-shadow: 0 6px 10px 0 rgb(0 0 0 / 20%), 0 8px 24px 0 rgb(0 0 0 / 22%);
+}
+ 
+.MessageBox h2 {
+  font-weight: bold;
+  text-align: center;
+  color: #7FC8A9;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+ 
+.Contact-name {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 22px;
+  border: #7FC8A9 solid 1px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+ 
+.Contact-email {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 22px;
+  border: #7FC8A9 solid 1px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+ 
+.Contact-no {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 22px;
+  border: #7FC8A9 solid 1px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+ 
+.Contact-area {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 22px;
+  border: #7FC8A9 solid 1px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+ 
+.Contact-btn {
+  width: 82%;
+  cursor: pointer;
+  margin-left: 10%;
+  font-size: 22px;
+  border: #7FC8A9 solid 1px;
+  font-weight: 100;
+  background-image: -webkit-linear-gradient(top, #3DF68C, #0F3AC5);
+}

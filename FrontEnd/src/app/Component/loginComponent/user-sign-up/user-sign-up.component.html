@@ -1,0 +1,62 @@
+<div class="backgroud-image">
+  <div class="container">
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="white-box">
+          <div class="text-header">
+            <h1 class="animate-charcter">User Register</h1>
+          </div>
+
+          
+
+          <form class="was-validated">
+            <div class="form-group">
+              <label>Name</label>
+              <input
+                type="text"
+                [(ngModel)]="employeename"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-control"
+                id="name"
+                class="form-control"
+                placeholder="Enter Name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                [(ngModel)]="email"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-control"
+                id="email"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Paaword</label>
+              <input
+                type="password"
+                [(ngModel)]="password"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-control"
+                id="password"
+                class="form-control"
+                placeholder="Enter Password"
+                required
+              />
+            </div>
+
+            <button type="submit" routerLink="/userlogin" class="btn btn-primary mt-3" (click)="save()">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.thanks{
+
+    text-align: center;
+    justify-content: center;
+}
+.thanks h1{
+    padding-top: 200px;
+    font-size: 60px;
+    font-weight: 500;
+    padding-bottom: 50px;
+
+}
+.thanks button{
+    width: 30%;
+}

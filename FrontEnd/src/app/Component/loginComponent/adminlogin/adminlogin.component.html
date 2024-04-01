@@ -1,0 +1,29 @@
+<div class="backgroud-image">
+  <div class="container">
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="white-box">
+          <div class="text-header">
+            <h1 class="animate-charcter">Admin Login</h1>
+          </div>
+
+          <form class="was-validated">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" [(ngModel)]="username" name="username" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" [(ngModel)]="password" name="password" class="form-control" required>
+            </div>
+            <button class="btn btn-primary mt-3" (click)="login()">Login</button>
+            <p class="text-danger" *ngIf="errorMessage">{{ errorMessage }}</p>
+        
+          </form>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

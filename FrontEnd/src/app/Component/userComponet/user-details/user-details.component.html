@@ -1,0 +1,15 @@
+<div>
+    <h2>User Details</h2>
+    <div *ngIf="userDetails">
+    <p><strong>Full Name:</strong> {{ userDetails.fullName }}</p>
+    <p><strong>Phone Number:</strong> {{ userDetails.phoneNumber }}</p>
+    <p><strong>Address:</strong> {{ userDetails.address }}</p>
+    <p><strong>DL Number:</strong> {{ userDetails.dlNumber }}</p>
+    <p><strong>Total Days:</strong> {{ userDetails.totalDays }}</p>
+    <p><strong>Car Type:</strong> {{ userDetails.carType }}</p>
+    <p><strong>Car Fare Types:</strong></p>
+    <ul>
+    <li *ngFor="let fareType of carFareTypes">{{ fareType }}</li>
+    </ul>
+    </div>
+    </div>

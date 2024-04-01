@@ -1,0 +1,177 @@
+<div class="backgroud-image">
+  <div class="container">
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="white-box">
+          <div class="text-header">
+            <h1 class="animate-charcter">User Details</h1>
+            <form
+              #RequestForm="ngForm"
+              (ngSubmit)="onSubmit()"
+              class="g-3 needs-validation pt-5"
+              novalidate
+            >
+              <div class="col-md-12">
+                <label for="validationCustom01" class="form-label"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullname"
+                  name="fullname"
+                  [(ngModel)]="fullname"
+                  required
+                />
+                <div
+                  *ngIf="
+                    RequestForm.controls['fullname'].touched &&
+                    RequestForm.controls['fullname'].errors?.required
+                  "
+                  class="invalid-feedback"
+                >
+                  Full Name is required.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom02" class="form-label"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="phonenumber"
+                  id="phonenumber"
+                  [(ngModel)]="phonenumber"
+                  pattern="[0-9]{10}"
+                  required
+                />
+                <div
+                  *ngIf="
+                    RequestForm.controls['phonenumber'].touched &&
+                    RequestForm.controls['phonenumber'].errors?.required
+                  "
+                  class="invalid-feedback"
+                >
+                  Phone Number is required.
+                </div>
+                <div
+                  *ngIf="
+                    RequestForm.controls['phonenumber'].touched &&
+                    RequestForm.controls['phonenumber'].errors?.pattern
+                  "
+                  class="invalid-feedback"
+                >
+                  Phone Number must be 10 digits.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom03" class="form-label"
+                  >Address</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  name="address"
+                  [(ngModel)]="address"
+                  required
+                />
+                <div
+                  *ngIf="
+                    RequestForm.controls['address'].touched &&
+                    RequestForm.controls['address'].errors?.required
+                  "
+                  class="invalid-feedback"
+                >
+                  Address is required.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom03" class="form-label"
+                  >DL Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dlnumber"
+                  name="dlnumber"
+                  [(ngModel)]="dlnumber"
+                  pattern="[A-Z]{2}[0-9]{8}"
+                  required
+                />
+                <div
+                  *ngIf="
+                    RequestForm.controls['dlnumber'].touched &&
+                    RequestForm.controls['dlnumber'].errors?.required
+                  "
+                  class="invalid-feedback"
+                >
+                  DL Number is required.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom03" class="form-label"
+                  >Total Days</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="totalDays"
+                  name="totalDays"
+                  [(ngModel)]="totalDays"
+                  required
+                />
+                <div
+                  *ngIf="
+                    RequestForm.controls['totalDays'].touched &&
+                    RequestForm.controls['totalDays'].errors?.required
+                  "
+                  class="invalid-feedback"
+                >
+                  Total Days is required.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom06" class="form-label"
+                  >Car Type</label
+                >
+                <select
+                  class="form-select"
+                  id="carType"
+                  name="carType"
+                  [(ngModel)]="carType"
+                  required
+                >
+                  <option selected disabled value="">
+                    Select Vehicle Type
+                  </option>
+                  <option value="HatchBack">HatchBack</option>
+                  <option value="Sedan">Sedan</option>
+                  <option value="SUV">SUV</option>
+                </select>
+                <div
+                  *ngIf="
+                    RequestForm.controls['carType'].touched &&
+                    RequestForm.controls['carType'].errors?.required
+                  "
+                  class="invalid-feedback"
+                >
+                  Car Type is required.
+                </div>
+              </div>
+              <div class="col-md-12 mt-lg-4">
+                <input
+                  class="btn btn-primary btn-lg"
+                  type="submit"
+                  value="Submit"
+                  [disabled]="RequestForm.invalid"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
